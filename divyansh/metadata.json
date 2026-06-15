@@ -1,0 +1,6 @@
+{
+  "name": "Contact Manager",
+  "description": "A premium full-stack contact management application with AI-powered search, categorization, and duplicate suggestions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

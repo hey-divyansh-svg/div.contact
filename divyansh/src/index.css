@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  
+  --color-brand-50: #F9F9F7;
+  --color-brand-100: #F0F0EE;
+  --color-brand-200: #E5E5E1;
+  --color-brand-300: #D5D5D0;
+  --color-brand-400: #BABAB5;
+  --color-brand-500: #1A1A1A;
+  --color-brand-600: #111111;
+  --color-brand-700: #000000;
+
+  --color-slate-50: #F9F9F7;
+  --color-slate-100: #F0F0EE;
+  --color-slate-200: #E5E5E1;
+  --color-slate-300: #D5D5D0;
+  --color-slate-400: #BABAB5;
+  --color-slate-500: #8C8C86;
+  --color-slate-600: #5C5C57;
+  --color-slate-700: #3C3C37;
+  --color-slate-800: #2C2C28;
+  --color-slate-900: #1C1C19;
+  --color-slate-950: #121210;
+  
+  --color-indigo-50: #F9F9F7;
+  --color-indigo-100: #F0F0EE;
+  --color-indigo-200: #E5E5E1;
+  --color-indigo-300: #D5D5D0;
+  --color-indigo-400: #BABAB5;
+  --color-indigo-500: #1A1A1A;
+  --color-indigo-600: #111111;
+  --color-indigo-700: #000000;
+}
+
+/* Glassmorphic Utilities redefined to high-end paper Editorial Panels */
+.glass-panel {
+  background: #FFFFFF !important;
+  border: 1px solid #E5E5E1 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.dark .glass-panel {
+  background: #181816 !important;
+  border: 1px solid #2D2D2A !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.glass-card {
+  background: #FFFFFF !important;
+  border: 1px solid #E5E5E1 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.dark .glass-card {
+  background: #1C1C1A !important;
+  border: 1px solid #2D2D2A !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Hard-cornered Bookish Aesthetics */
+.rounded-2xl, .rounded-xl, .rounded-lg {
+  border-radius: 4px !important;
+}
+
+input, select, textarea {
+  border-radius: 4px !important;
+}
+
+/* Global transitions and scroll smooth styling */
+html, body {
+  font-family: var(--font-sans);
+  background-color: #F9F9F7;
+  color: #1A1A1A;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+html.dark body {
+  background-color: #121210;
+  color: #F5F5F2;
+}
+
+/* Custom Scrollbar minimal designs */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E5E1;
+  border-radius: 0px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2D2D2A;
+}
+
+/* Hover border highlights */
+.glow-effect {
+  position: relative;
+  transition: all 0.2s ease;
+}
+.glow-effect:hover {
+  border-color: #1A1A1A !important;
+}
+.dark .glow-effect:hover {
+  border-color: #F5F5F2 !important;
+}
+
+/* Elegant serif headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display) !important;
+}
+
